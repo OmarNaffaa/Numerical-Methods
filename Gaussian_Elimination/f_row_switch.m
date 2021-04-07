@@ -1,0 +1,2 @@
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!% Omar Naffaa - ECE 5110% Gaussian Elimination - Utility Functions% April 3, 2021% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!function A_swapped = f_row_switch(A, i, maxElemIndex)    % Swap rows in a matrix  [numRows, numCols] = size(A);    for (rowIndex = 1 : numCols)    temp = A(i, rowIndex);    A(i, rowIndex) = A(maxElemIndex, rowIndex);    A(maxElemIndex, rowIndex) = temp;  endfor
+    A_swapped = A;  endfunction
